@@ -177,14 +177,14 @@ numbers = [10, 3, 5, 9, 18, 3, 0, 7]
 Напишите функцию, которая возвращает максимальное значение, сумму и среднее арифметическое чисел в списке.  
 """
 
-numbers = [10, 3, 5, 9, 18, 3, 0, 7]
+# numbers = [10, 3, 5, 9, 18, 3, 0, 7]
 
-def I_LOVE_PYTHON(numbers):
-    res = {}
-    res.update({"max": max(numbers), "sum": sum(numbers), "AVG": sum(numbers) / len(numbers)})
-    return res
+# def I_LOVE_PYTHON(numbers):
+#     res = {}
+#     res.update({"max": max(numbers), "sum": sum(numbers), "AVG": sum(numbers) / len(numbers)})
+#     return res
 
-print(I_LOVE_PYTHON(numbers=numbers))
+# print(I_LOVE_PYTHON(numbers=numbers))
 
 
 """
@@ -198,17 +198,18 @@ word_list = ["apple", "airplane", "carrot", "elephant", "guitar", "moonlight"]
 Напишите программу, которая определяет самое длинное и самое короткое слово в списке.  
 """
 
-word_list = ["apple", "airplane", "carrot", "elephant", "guitar", "moonlight"]
+# word_list = ["apple", "airplane", "carrot", "elephant", "guitar", "moonlight"]
 
-long_word = ""
-short_word = ""
+# long_word = ""
+# short_word = ""
 
-for i in word_list:
-    if len(i) > len(long_word):
-        long_word = i
-    if len(i) < len(short_word)
+# for i in word_list:
+#     if len(i) > len(long_word):
+#         long_word = i
+#     if len(i) < len(short_word) or short_word == "":
+#         short_word = i
 
-print(long_word, short_word)
+# print(f"long: {long_word}, short: {short_word}")
 
 """
 ---
@@ -220,6 +221,21 @@ number_list = [5, 8, 2, 7, 3, 5, 6, 9, 2, 4, 8, 7, 1, 5, 3]
 ```  
 Создайте новый список, содержащий только числа, которые встречаются в оригинальном списке не менее трёх раз.  
 
+"""
+# number_list = [5, 8, 2, 7, 3, 5, 6, 9, 2, 4, 8, 7, 1, 5, 3]
+
+# new_number_list = set(number_list)
+
+# result_number_list = []
+
+# for i in new_number_list:
+#     if (number_list.count(i) >= 3):
+#         result_number_list.append(i)
+
+# print(result_number_list)
+
+"""
+
 ---
 
 ### Задача 11: Второй лучший результат  
@@ -228,6 +244,14 @@ number_list = [5, 8, 2, 7, 3, 5, 6, 9, 2, 4, 8, 7, 1, 5, 3]
 exam_results = [23, 78, 96, 32, 53, 67, 23, 98, 33, 38, 45, 39, 86, 12, 43, 45]
 ```  
 Напишите программу, которая определяет второй по величине результат в списке.  
+
+"""
+exam_results = [23, 78, 96, 32, 53, 67, 23, 98, 33, 38, 45, 39, 86, 12, 43, 45]
+
+
+print(sorted(exam_results)[-2])
+
+"""
 
 --- 
 """
